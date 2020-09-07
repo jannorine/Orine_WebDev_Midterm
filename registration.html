@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <p>The features of the registration form I made is just similar to the registration forms we usually<br> 
+            see on the internet. On the top part of the form there is a searchbar. Its function is to accept<br>
+             user input to be searched for in a database.  Second, there are txtfields that asks for yout personal <br>
+             information (fullname, desired username, desired password, birthdate, and gender) which is necessary  <br>
+             for acquiring an account. The user can also choose to register as a student or as a teacher, and on the <br>
+             bottom part of the form there is a checkbox which lets the user confirm with the terms and conditions of<br>
+            the site they are singning uplastly, There are two buttons provided for submitting and resetting <br>
+             </p>
+
+            <br>
+            <br>
+        <h1 style="color:white">  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registration Form</h1>   
+       
+
+          <!--Search-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label for="search">Search</label>
+          <input id="search" type="search" name="search">
+           <br>
+           <br>
+        
+          <!--TextField-->
+            <form>
+            
+                <label for="fname"></label> 
+                <input id="fname" type="text" name="fname" placeholder="Full Name"/>
+               
+
+                &nbsp;&nbsp;&nbsp;&nbsp;
+
+                <label for="username"></label>
+                <input id="username" type="text" name="username" placeholder="Username"/>
+            </form>
+
+            <br>
+
+            <!--Password-->
+            <form>
+            
+                <label for="password"></label>
+                <input id="password" type="password" name="password" placeholder="Enter Password"/>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;
+
+                <label for="Cpassword"></label>
+                <input id="Cpassword" type="password" name="Cpassword" placeholder="Confirm Password"/>
+            </form>
+             <br>
+
+            <!--inputdate-->
+             <form>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday">
+              </form>
+              <br>
+
+            <!--radioButton-->
+             <input type="radio" 
+             id="gender"
+             name="gender"
+             value= "Male"
+             selected="selected"/>
+            <label for="gender">Male</label>
+
+            &nbsp;
+
+            <input type="radio" 
+            id="gender"
+            name="gender"
+            value= "Female"
+            selected="selected"/>
+           <label for="gender">Female</label>
+
+           &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+
+            <!--Dropdown Menu-->
+            <label for="drpLoginType">Register As:</label>
+            <select name="dropLogintype" id="drpLoginType">
+                <option value="Guest">Guest</option>
+                <option value="Student">Student</option>
+                <option value="Teacher">Teacher</option>
+           </select>
+           <br>
+           <br>
+        
+           
+           <!--checkbox-->
+           <input type="checkbox" 
+           id="cbxPolicy1"
+           name="cbxPolicy1"
+           value= "I accept Lorem Ipsum"/>
+           <label for="cbxPolicy1"> I accept the terms and conditions</label>
+           <br>
+           <br>
+
+
+           <!--input submit button-->
+           <input type="submit" value="Submit">
+
+           &nbsp&nbsp
+
+           <!--reset button-->
+           <button type="reset" value="reset">Reset</button>
+
+       
+   
+    </body> 
+</html>
