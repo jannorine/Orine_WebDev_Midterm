@@ -1,0 +1,123 @@
+@font-face{
+    src:url(PinkSans.ttf);
+    font-family: pinksans;
+}
+
+{
+    margin:0;
+    padding:0;
+}
+
+header{
+    position: fixed;
+    height: 70x;
+    width:100%;
+    margin-top: -1.1%;
+    z-index: 999;
+    background: rgb(158, 59, 96, .5);
+    }
+
+    header div.container nav, header div.container h1 {
+        flex: 1 100px; }
+
+      header div.container nav {
+        flex-grow: 2; }
+
+    header nav {
+      display: flex;
+      justify-content: space-around; }
+
+      header nav a {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        font-size: 1.2em; 
+        font-family: pinksans;}
+
+        header nav a:hover {
+          color: #002635;
+          background: #fff; }
+
+        header nav a span {
+          align-self: center; }
+
+
+body{
+    background: #e66e9b;
+    color: white;
+    
+    text-align: center;
+}
+
+
+.pic{
+    margin-top: 10%;
+}
+
+.box-1{
+    width: 65%;
+    margin:auto;
+    padding:20px;
+    margin-top:20px; /*margin of the box*/
+    margin-bottom: 20%;
+}
+
+.block1{
+    float:left;
+    width: 30%;
+    padding:10px;
+    font-size: 60px;
+    margin-left: 3%;
+    margin-top: -40;  
+    /*border: 5px red solid;*/
+}
+
+.block2
+{
+    float:right;
+    box-sizing:border-box;
+    box-sizing: border-box;
+    margin-right:6%;
+    margin-top: 3.5%;
+    
+}
+
+h1{
+    font-family: pinksans;
+    letter-spacing: 0.2em;
+    
+    
+}
+
+h2{
+    font-size: 150%;
+    font-family: pinksans;
+    letter-spacing: 0.02em;
+    text-shadow: 50%;
+}
+
+p{
+    font-size: 16x;
+    text-align: right ;
+    font-family: Bahnschrift;
+    color: #3c3336;
+    text-align: left justify;
+    
+    
+}
+
+
+img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+.container2{
+    margin-top: 5%;
+}
+
