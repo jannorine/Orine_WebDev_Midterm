@@ -1,0 +1,120 @@
+<html>
+
+<head>
+  <title>Registration Form</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Satisfy&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+  <!--Search-->
+  <nav class="navbar navbar-dark bg-dark justify-content-between" style="padding:23px 20px; box-shadow: 0px 0px 3px #000;">
+    <a class="navbar-brand" style="color:white;">JPOrine</a>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" aria-label="Search">
+      <button class="btn btn-sm btn-outline-secondary" type="submit">SEARCH</button>
+    </form>
+  </nav>
+
+  <div class="alert alert-dark alert-dismissible fade show" style="position: fixed; z-index:1; top:0px;" role="alert">
+    <h4 class="alert-heading">Disclaimer!</h4>
+    <p>The features of the registration form I made is just similar to the registration forms we usually see on the internet. On the top part of the form there is a searchbar. Its function is to accept user input to be searched for in a database. Second, there are txtfields that asks for yout personal information (fullname, desired username, desired password, birthdate, and gender) which is necessary for acquiring an account. The user can also choose to register as a student or as a teacher, and on the bottom part of the form there is a checkbox which lets the user confirm with the terms and conditions of the site they are singning uplastly, There are two buttons provided for submitting and resetting.</p>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div id="form">
+
+    <div id="form2">
+
+      <h1>Registration Form</h1>
+
+    </div>
+
+    <div id="form3">
+      <form onsubmit="return vldchk()">
+      <table>
+
+        <!--TextField-->
+
+        <tr>
+          <td><input required id="fname" type="text" name="fname" placeholder="Full Name" /></td>
+        </tr>
+        <tr>
+          <td><input required id="email" type="email" name="email" placeholder="Email" /></td>
+        </tr>
+
+        <!--Password-->
+
+        <tr>
+          <td><input  required minlength="5" id="password" type="password" name="password" placeholder="Enter Password" /></td>
+        </tr>
+        <tr>
+          <td><input id="Cpassword" type="password" name="Cpassword" placeholder="Confirm Password" />
+            <br><span id="errpwd"> password not match</span>
+          </td>
+          
+        </tr>
+
+        <!--inputdate-->
+
+        <tr>
+          <td><label for="birthday">Birthday</label><input required type="date" id="birthday" name="birthday"></td>
+        </tr>
+
+        <!--radioButton-->
+
+        <tr>
+          <td><label for="birthday">Gender</label><br><input type="radio" id="gender" name="gender" value="Male" selected="selected" checked /><label for="gender">Male</label>
+            <input type="radio" id="gender" name="gender" value="Female" selected="selected" /><label for="gender">Female</label></td>
+        </tr>
+
+        <!--Dropdown Menu-->
+
+        <tr>
+          <td><label for="drpLoginType">Register As</label><br><select name="dropLogintype" id="drpLoginType">
+              <option value="Guest">Guest</option>
+              <option value="Student">Student</option>
+              <option value="Teacher">Teacher</option>
+            </select></td>
+        </tr>
+
+        <!--checkbox-->
+
+        <tr>
+          <td>
+            <input type="checkbox" id="cbxPolicy1" name="cbxPolicy1" value="I accept Lorem Ipsum" />
+            <label for="cbxPolicy1"> I accept the terms and conditions.</label>
+            <br><span id="errplc">Accept Terms and Conditions</span>
+          </td>
+          </td>
+
+          <!--input submit button-->
+          <!--reset button-->
+
+        <tr>
+          <td><button type="submit">Submit</button>
+         <button type="reset" value="reset">Reset</button></td>
+        </tr>
+
+      </table>
+    </div>
+  </div>
+  <br></br>
+
+</form>
+</body>
+<script src="js/script.js"></script>
+</html>
